@@ -1,10 +1,24 @@
+#ifndef PLAYER_H
+#define PLAYER_H
+
+#include <string>
+
 class player {
     private:
-        string name;
+        std::string name;
         char mark;
+
     public:
-        string getName();
-        getMark()
+        player(const std::string& playerName, char playerMark)
+            : name(playerName), mark(playerMark) {}
 
+        std::string getName() const {
+            return name;
+        }
 
-}
+        char getMark() const {
+            return mark;
+        }
+};
+
+#endif

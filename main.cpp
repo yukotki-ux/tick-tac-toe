@@ -1,8 +1,11 @@
-#include <iostream>
+#include <cstdlib>
+#include <ctime>
 #include "game.h"
-#include "grid.h"
-#include "opponent.h"
-#include "player.h"
 
-using nameespace std
+int main() {
+	std::srand(static_cast<unsigned int>(std::time(NULL)));
+	game currentGame;
+	currentGame.gameStart();
+	return 0;
+}
 
